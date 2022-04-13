@@ -7,6 +7,35 @@ import java.util.Scanner;
 
 public class MesFonctions{
 
+
+
+    public int maximum(int a, int b){
+        if(a <= b)
+            return b;
+        else
+            return a;
+        
+    }
+
+
+    public int minimum(int a, int b){
+        if(a >= b)
+            return b;
+        else
+            return a;
+        
+    }
+
+    public int factoriel(int f) {
+        //////// FONCTION RECURSIE
+        if (f <= 1) {
+            return 1;
+        }
+        else {
+            return f * factoriel(f - 1);
+        }
+    }
+
     public void estPalindrome(String s){
         //////// FONCTION ITERATIVE
         
@@ -14,8 +43,8 @@ public class MesFonctions{
         et s'ils sont egaux, le programme continu
         On deroule la boucle while et on teste
         le caractere suivant(i+1) avec (longeur-(i+1))
-        jusqu'a ce i soit egale à longueur/2,
-        sinon le booleen egale reçoit false
+        jusqu'a ce i soit egale a longueur/2,
+        sinon le booleen egale recoit false
        */
         
         int i=0, longueur = s.length()-1;
@@ -33,5 +62,6 @@ public class MesFonctions{
         }
     
     }
+
 
 }
